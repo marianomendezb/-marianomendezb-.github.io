@@ -14,34 +14,6 @@ siteNav.querySelectorAll('a').forEach(link => {
   });
 });
 
-// Lightbox for project tiles
-const lightbox = document.getElementById('lightbox');
-const lightboxFrame = lightbox.querySelector('.lightbox-frame');
-const lightboxClose = lightbox.querySelector('.lightbox-close');
-
-document.querySelectorAll('.tile').forEach(tile => {
-  tile.addEventListener('click', () => {
-    const embedUrl = tile.getAttribute('data-embed');
-    if (!embedUrl) return;
-    lightboxFrame.innerHTML = `<iframe src="${embedUrl}" title="Project video" frameborder="0" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen></iframe>`;
-    lightbox.classList.add('open');
-    lightbox.setAttribute('aria-hidden', 'false');
-  });
-});
-
-function closeLightbox(){
-  lightbox.classList.remove('open');
-  lightbox.setAttribute('aria-hidden', 'true');
-  lightboxFrame.innerHTML = '';
-}
-
-lightboxClose.addEventListener('click', closeLightbox);
-lightbox.addEventListener('click', (e) => {
-  if (e.target === lightbox) closeLightbox();
-});
-document.addEventListener('keydown', (e) => {
-  if (e.key === 'Escape') closeLightbox();
-});
-
 // Footer year
-document.getElementById('year').textContent = new Date().getFullYear();
+const yearEl = document.getElementById('year');
+if (yearEl) yearEl.textContent = new Date().getFullYear();
