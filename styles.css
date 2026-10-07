@@ -124,8 +124,9 @@ h1,h2,h3{
 .hero-copy{ flex: 1 1 auto; min-width: 0; }
 .hero-logo{
   flex: 0 0 auto;
-  width: clamp(72px, 10vw, 140px);
-  height: clamp(72px, 10vw, 140px);
+  width: clamp(110px, 15vw, 220px);
+  height: clamp(110px, 15vw, 220px);
+  margin-right: clamp(24px, 6vw, 72px);
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
