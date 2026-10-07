@@ -118,7 +118,7 @@ h1,h2,h3{
 .hero-top{
   display: flex;
   justify-content: space-between;
-  align-items: flex-start;
+  align-items: center;
   gap: clamp(24px, 5vw, 48px);
 }
 .hero-copy{ flex: 1 1 auto; min-width: 0; }
