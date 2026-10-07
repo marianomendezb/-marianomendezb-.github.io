@@ -87,10 +87,11 @@ h1,h2,h3{
   display: flex;
   align-items: center;
   height: 100%;
-  font-family: var(--font-display);
-  font-size: 1.22rem;
-  font-weight: 800;
-  color: var(--text-strong);
+  font-family: var(--font-body);
+  font-size: 0.92rem;
+  font-weight: 800;text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: var(--text);
 }
 .wordmark img{
   height: 48px;
