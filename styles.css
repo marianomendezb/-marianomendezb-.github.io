@@ -458,7 +458,7 @@ a:focus-visible, button:focus-visible{
 
 .footer-social{
   display: flex;
-  align-items: center;
+  align-items: left;
   gap: 1.25rem;
 }
 .footer-social a{
