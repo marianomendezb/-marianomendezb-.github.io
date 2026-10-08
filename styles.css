@@ -404,7 +404,7 @@ a:focus-visible, button:focus-visible{
 @media (max-width: 860px){
   .category{ grid-template-columns: 1fr; }
   .category-label{ position: static; }
-  .bio{ grid-template-columns: 1fr; }
+  .about{ grid-template-columns: 1fr; }
   .grid{ grid-template-columns: 1fr 1fr; }
 }
 
