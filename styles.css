@@ -125,9 +125,9 @@ h1,h2,h3{
 .hero-copy{ flex: 1 1 auto; min-width: 0; }
 .hero-logo{
   flex: 0 0 auto;
-  width: clamp(110px, 15vw, 220px);
-  height: clamp(110px, 15vw, 220px);
-  margin-right: clamp(24px, 6vw, 72px);
+  width: clamp(220px, 30vw, 440px);
+  height: clamp(220px, 30vw, 440px);
+  margin-right: clamp(48px, 12vw, 144px);
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
@@ -268,7 +268,7 @@ h1,h2,h3{
   font-family: var(--font-display);
   font-style: normal;
   font-size: 0.78rem;
-  font-weight: 500;
+  font-weight: 700;
   color: var(--text-strong);
   letter-spacing: 0.08em;
   text-transform: uppercase;
