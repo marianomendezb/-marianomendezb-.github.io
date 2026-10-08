@@ -307,15 +307,14 @@ h1,h2,h3{
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 .contact-email:hover, .contact-email:focus-visible{ border-color: var(--accent); color: var(--accent); }
-.profile-pic{
+/*.profile-pic{
   flex: 0 0 auto;
   width: clamp(220px, 30vw, 440px);
   height: clamp(220px, 30vw, 440px);
-  /*margin-right: clamp(48px, 12vw, 144px);*/
   border-radius: 50%;
   object-fit: cover;
   border: 1px solid var(--line);
-}
+}*/
 
 /* ===== Footer ===== */
 .site-footer{
