@@ -125,8 +125,8 @@ h1,h2,h3{
 .hero-copy{ flex: 1 1 auto; min-width: 0; }
 .hero-logo{
   flex: 0 0 auto;
-  width: clamp(220px, 30vw, 440px);
-  height: clamp(220px, 30vw, 440px);
+  width: clamp(165px, 22.5vw, 330px);
+  height: clamp(165px, 22.5vw, 330px);
   margin-right: clamp(48px, 12vw, 144px);
   border-radius: 50%;
   object-fit: cover;
@@ -153,8 +153,8 @@ h1,h2,h3{
   max-width: 46ch;
   color: var(--text-muted);
   font-family: var(--font-mono);
-  font-weight: 400;
-  font-size: 1.15rem;
+  font-weight: 900;
+  font-size: 1.30rem;
   font-style: normal;
   text-transform: uppercase;
 }
@@ -259,6 +259,14 @@ h1,h2,h3{
   padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 64px);
   border-top: 1px solid var(--line);
 }
+.profile-pic{
+  flex: 0 0 auto;
+  width: clamp(110px, 15vw, 220px);
+  height: clamp(110px, 15vw, 220px);
+  /*border-radius: 50%;*/
+  object-fit: cover;
+  border: 1px solid var(--line);
+}
 .about-hello{ font-size: clamp(2rem, 3.4vw, 2.7rem); margin-bottom: 1.25rem; }
 .about-text p{ max-width: 62ch; color: var(--text); font-family: var(--font-mono); font-weight: 400; margin: 0 0 1.1rem; }
 /*.about-signoff{ color: var(--text-strong) !important; font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: 1.3rem; }*/
@@ -307,14 +315,7 @@ h1,h2,h3{
   transition: border-color 0.2s ease, color 0.2s ease;
 }
 .contact-email:hover, .contact-email:focus-visible{ border-color: var(--accent); color: var(--accent); }
-/*.profile-pic{
-  flex: 0 0 auto;
-  width: clamp(220px, 30vw, 440px);
-  height: clamp(220px, 30vw, 440px);
-  border-radius: 50%;
-  object-fit: cover;
-  border: 1px solid var(--line);
-}*/
+
 
 /* ===== Footer ===== */
 .site-footer{
@@ -456,7 +457,7 @@ a:focus-visible, button:focus-visible{
   color: #FFFFFF;
 }
 
-.footer-social{
+/*.footer-social{
   display: flex;
   align-items: left;
   gap: 1.25rem;
@@ -467,7 +468,7 @@ a:focus-visible, button:focus-visible{
   transition: color 0.2s ease;
 }
 .footer-social svg{ width: 20px; height: 20px; }
-.footer-social a:hover, .footer-social a:focus-visible{ color: var(--accent); }
+.footer-social a:hover, .footer-social a:focus-visible{ color: var(--accent); }*/
 
 @media (max-width: 620px){
   .site-footer{ flex-direction: column; align-items: left; gap: 1rem; text-align: center; }
