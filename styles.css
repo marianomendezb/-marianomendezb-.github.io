@@ -255,10 +255,39 @@ h1,h2,h3{
 .about{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;            /* todas las columnas con el mismo alto */
   gap: clamp(32px, 6vw, 80px);
   padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 64px);
   border-top: 1px solid var(--line);
 }
+/* Las dos columnas de contenido llenan el alto de la foto */
+.about-text,
+.about-lists{
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+/* Services arriba, Clients abajo, repartidos en todo el alto */
+.about-lists{ justify-content: space-between; }
+
+/* Hello arriba, y el último párrafo apoyado abajo */
+.about-text p:last-child{
+  margin-top: auto;
+  margin-bottom: 0;
+}
+
+/* Sin espacio de más arriba de los títulos */
+.about-hello,
+.list-block h3{
+  line-height: 1;
+  margin-top: 0;
+  text-box: trim-both cap alphabetic;
+}
+
+/* Sin espacio sobrante al final del último bloque */
+.list-block:last-child{ margin-bottom: 0; }
+
 .profile-pic{
   display: block;
   width: 100%;
@@ -286,7 +315,8 @@ h1,h2,h3{
   color: var(--text); 
   font-family: var(--font-mono); 
   font-weight: 400; 
-  margin: 0 0 1.1rem; }
+  margin: 0 0 1.1rem; 
+}
 
 /*.about-signoff{ color: var(--text-strong) !important; font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: 1.3rem; }*/
 
@@ -301,6 +331,7 @@ h1,h2,h3{
   text-transform: uppercase;
   margin-bottom: 1rem;
 } */
+ 
 .list-block ul{ list-style:none; margin:0; padding:0; }
 .list-block li{
   padding: 0.55rem 0;
