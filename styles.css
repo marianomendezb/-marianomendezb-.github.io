@@ -266,8 +266,8 @@ h1,h2,h3{
   aspect-ratio: 3 / 4;
   object-fit: cover;
   border: 1px solid var(--line);
-  filter: sepia(0.45) contrast(1.1) saturate(0.85) brightness(0.95);
-  
+  filter: contrast(1.5) saturate(0.85) brightness(0.75);
+
 }
 .about-hello{ 
   font-size: clamp(2rem, 3.4vw, 2.7rem); 
