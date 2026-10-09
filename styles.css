@@ -254,7 +254,7 @@ h1,h2,h3{
 /* ===== Bio ===== */
 .about{
   display:grid;
-  grid-template-columns: 1.4fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr;
   gap: clamp(32px, 6vw, 80px);
   padding: clamp(56px, 8vw, 96px) clamp(20px, 5vw, 64px);
   border-top: 1px solid var(--line);
@@ -262,13 +262,14 @@ h1,h2,h3{
 .profile-pic{
   flex: 0 0 auto;
   width: clamp(110px, 15vw, 220px);
-  height: clamp(110px, 15vw, 220px);
+  height: clamp(220px, 30vw, 440px);
+  margin: 0 0 1.1rem;
   /*border-radius: 50%;*/
-  object-fit: cover;
+  object-fit: fill;
   border: 1px solid var(--line);
 }
 .about-hello{ font-size: clamp(2rem, 3.4vw, 2.7rem); margin-bottom: 1.25rem; }
-.about-text p{ max-width: 62ch; color: var(--text); font-family: var(--font-mono); font-weight: 400; margin: 0 0 1.1rem; }
+.about-text p{ max-width: 62ch; color: var(--text); font-family: var(--font-mono); font-weight: 400; margin: 0; }
 /*.about-signoff{ color: var(--text-strong) !important; font-family: var(--font-display); font-style: italic; font-weight: 700; font-size: 1.3rem; }*/
 
 .list-block{ margin-bottom: 2.5rem; }
