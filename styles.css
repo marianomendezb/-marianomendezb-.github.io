@@ -401,6 +401,12 @@ h1,h2,h3{
   padding: clamp(24px, 4vw, 40px) clamp(20px, 5vw, 64px) clamp(64px, 10vw, 120px);
   align-items: start;
 }
+.project-videos{
+  display: flex;
+  flex-direction: column;
+  gap: clamp(16px, 2vw, 28px);
+  min-width: 0;
+}
 .project-video{
   position: relative;
   width: 100%;
@@ -417,6 +423,8 @@ h1,h2,h3{
 }
 .project-info{
   padding-top: clamp(4px, 1vw, 12px);
+  position: sticky;
+  top: calc(var(--header-h) + 24px);
 }
 .project-info h1{
   font-size: clamp(1.6rem, 2.8vw, 2.2rem);
