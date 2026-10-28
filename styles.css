@@ -421,6 +421,19 @@ h1,h2,h3{
   width:100%; height:100%;
   border:0;
 }
+.project-audio{
+  width: 100%;
+  border: 1px solid var(--line);
+  border-radius: 6px;
+  overflow: hidden;
+  background: var(--bg-elevated);
+}
+.project-audio iframe{
+  display: block;
+  width: 100%;
+  height: 300px;
+  border: 0;
+}
 .project-info{
   padding-top: clamp(4px, 1vw, 12px);
   position: sticky;
